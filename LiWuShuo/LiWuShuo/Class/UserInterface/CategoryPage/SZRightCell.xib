@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rightCell" id="qH5-y7-Zwd" customClass="SZRightCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qH5-y7-Zwd" id="Uxd-vP-d77">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="499"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fux-kO-ph9" customClass="SZRightCollV">
+                        <rect key="frame" x="0.0" y="30" width="300" height="469"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92768787860000002" green="0.92111254379999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cN2-dd-e76">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-ay-bkg">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkb-H6-Ifq">
+                                <rect key="frame" x="10" y="15" width="80" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LJf-oP-Tsf"/>
+                                    <constraint firstAttribute="height" constant="1" id="ag7-xK-TzP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门分类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv0-3g-VwJ">
+                                <rect key="frame" x="110" y="5" width="80" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="DGK-dJ-hda"/>
+                                    <constraint firstAttribute="width" constant="80" id="FRa-eN-uRI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndS-9k-AK3">
+                                <rect key="frame" x="210" y="15" width="80" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VbN-Ii-mcZ"/>
+                                    <constraint firstAttribute="height" constant="1" id="x1f-sN-ij8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ndS-9k-AK3" secondAttribute="trailing" constant="10" id="8Xo-cR-sDS"/>
+                            <constraint firstAttribute="height" constant="30" id="BUR-vD-OJo"/>
+                            <constraint firstItem="Rkb-H6-Ifq" firstAttribute="centerY" secondItem="2RB-ay-bkg" secondAttribute="centerY" id="Fvd-0V-HZI"/>
+                            <constraint firstItem="tv0-3g-VwJ" firstAttribute="centerY" secondItem="2RB-ay-bkg" secondAttribute="centerY" id="KgA-bH-IKy"/>
+                            <constraint firstItem="Rkb-H6-Ifq" firstAttribute="leading" secondItem="2RB-ay-bkg" secondAttribute="leading" constant="10" id="aGg-vm-aTk"/>
+                            <constraint firstItem="ndS-9k-AK3" firstAttribute="centerY" secondItem="2RB-ay-bkg" secondAttribute="centerY" id="eHz-Ob-wYg"/>
+                            <constraint firstItem="tv0-3g-VwJ" firstAttribute="centerX" secondItem="2RB-ay-bkg" secondAttribute="centerX" id="qra-ft-b3o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fux-kO-ph9" secondAttribute="bottom" id="3Cr-jw-C3P"/>
+                    <constraint firstItem="fux-kO-ph9" firstAttribute="top" secondItem="2RB-ay-bkg" secondAttribute="bottom" id="IkZ-OK-SaV"/>
+                    <constraint firstItem="2RB-ay-bkg" firstAttribute="top" secondItem="Uxd-vP-d77" secondAttribute="top" id="L4C-wO-idy"/>
+                    <constraint firstItem="2RB-ay-bkg" firstAttribute="leading" secondItem="Uxd-vP-d77" secondAttribute="leading" id="RVp-Sr-mLx"/>
+                    <constraint firstAttribute="trailing" secondItem="fux-kO-ph9" secondAttribute="trailing" id="Tod-cg-2eV"/>
+                    <constraint firstItem="fux-kO-ph9" firstAttribute="leading" secondItem="Uxd-vP-d77" secondAttribute="leading" id="dPP-bD-Wr5"/>
+                    <constraint firstAttribute="trailing" secondItem="2RB-ay-bkg" secondAttribute="trailing" id="tbY-LQ-hmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="categoryLabel" destination="tv0-3g-VwJ" id="6tj-nt-GOE"/>
+                <outlet property="contentCollV" destination="fux-kO-ph9" id="Pla-su-ObP"/>
+            </connections>
+            <point key="canvasLocation" x="385" y="392"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SZTitleView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SZTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfQ-WS-LrU">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="39"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGn-AZ-NGt">
+                            <rect key="frame" x="20" y="5" width="40" height="29"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="OSv-QS-6LY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="攻略">
+                                <color key="titleColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gongLueAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ApH-Kz-QoG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiJ-eS-8vB">
+                            <rect key="frame" x="90" y="5" width="40" height="29"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Ip5-Bq-Dbi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="单品">
+                                <color key="titleColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="danPinAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="20c-Co-x8d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wiJ-eS-8vB" secondAttribute="trailing" constant="20" id="AIE-7a-2MI"/>
+                        <constraint firstItem="KGn-AZ-NGt" firstAttribute="top" secondItem="IfQ-WS-LrU" secondAttribute="top" constant="5" id="Af4-XP-bB5"/>
+                        <constraint firstItem="wiJ-eS-8vB" firstAttribute="top" secondItem="IfQ-WS-LrU" secondAttribute="top" constant="5" id="Im9-CF-VMb"/>
+                        <constraint firstAttribute="bottom" secondItem="wiJ-eS-8vB" secondAttribute="bottom" constant="5" id="JzP-e8-Rsg"/>
+                        <constraint firstAttribute="bottom" secondItem="KGn-AZ-NGt" secondAttribute="bottom" constant="5" id="Lv7-aG-Alo"/>
+                        <constraint firstItem="KGn-AZ-NGt" firstAttribute="leading" secondItem="IfQ-WS-LrU" secondAttribute="leading" constant="20" id="uY2-Kg-juO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-z9-Mxt">
+                    <rect key="frame" x="0.0" y="39" width="150" height="5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mum-51-Cfd">
+                            <rect key="frame" x="20" y="-2" width="40" height="2"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="eeq-Sf-UWY"/>
+                                <constraint firstAttribute="height" constant="2" id="iV5-wC-x5K"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Mum-51-Cfd" firstAttribute="leading" secondItem="o2s-z9-Mxt" secondAttribute="leading" constant="20" id="62w-lw-xsb"/>
+                        <constraint firstItem="Mum-51-Cfd" firstAttribute="top" secondItem="o2s-z9-Mxt" secondAttribute="top" constant="-2" id="SNK-3o-cth"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="o2s-z9-Mxt" firstAttribute="top" secondItem="IfQ-WS-LrU" secondAttribute="bottom" id="F5F-Kr-Bfb"/>
+                <constraint firstAttribute="bottom" secondItem="o2s-z9-Mxt" secondAttribute="bottom" id="IFe-yp-yaL"/>
+                <constraint firstAttribute="trailing" secondItem="o2s-z9-Mxt" secondAttribute="trailing" id="OAt-qO-RV8"/>
+                <constraint firstItem="IfQ-WS-LrU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rcp-SB-v0S"/>
+                <constraint firstAttribute="bottom" secondItem="IfQ-WS-LrU" secondAttribute="bottom" constant="5" id="Uof-zx-z0W"/>
+                <constraint firstItem="IfQ-WS-LrU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="esw-mL-fiF"/>
+                <constraint firstAttribute="trailing" secondItem="IfQ-WS-LrU" secondAttribute="trailing" id="oDe-oz-8yZ"/>
+                <constraint firstItem="o2s-z9-Mxt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zgz-dR-vCf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="danPinBtn" destination="wiJ-eS-8vB" id="bcA-eC-uuw"/>
+                <outlet property="gongLueBtn" destination="KGn-AZ-NGt" id="D78-fc-QOF"/>
+                <outlet property="indicatorView" destination="Mum-51-Cfd" id="tdi-MV-vIW"/>
+                <outlet property="leftMagin" destination="62w-lw-xsb" id="WuG-01-beJ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

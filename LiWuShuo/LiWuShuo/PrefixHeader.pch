@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  LiWuShuo
+//
+//  Created by lx on 16/10/4.
+//  Copyright © 2016年 BeiWo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+#define KTopItemWidth 60
+#define KTopItemMagin 10
+
+//通知
+//---首页通知
+#define KTopColumnIndexChange @"topColumnIndexChange"
+
+#define KAmongColumnIndexChange @"amongColumnIndexChange"
+
+//---榜单页通知
+#define KTopPageTopColumnIndexChange @"topPageTopColumnIndexChange"
+#define KTopPageAmongColumnIndexChange @"topPageAmongColumnIndexChange"
+
+//---点击首页上的cell，查看详情页面的通知
+#define KPushCellDetailPage @"pushCellDetailPage"
+
+//---点击轮播视图上的图片，查看轮播详情页面的通知
+#define KPushCycleDetailPage @"pushCycleDetailPage"
+
+
+//分类页面中，点击右边栏目发出的通知，使左边栏目的显示发生改变
+#define KCategoryLeftIndexChange @"categoryLeftIndexChange"
+
+//分类页面中，点击左边栏目发出的通知，是右边栏目的显示发生改变
+#define KCategoryRightIndexChange @"categoryRightIndexChange"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="leftCell" id="KGk-i7-Jjw" customClass="SZLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-Nq-dFi">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="49"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.41524079310000001" blue="0.48608709849999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="MUh-4a-2NR"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门分类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-KE-JCC">
+                        <rect key="frame" x="10" y="10" width="85" height="30"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Q4J-M5-iYu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.41524079310000001" blue="0.48608709849999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dg7-Nq-dFi" secondAttribute="bottom" id="5eo-II-cMu"/>
+                    <constraint firstItem="dg7-Nq-dFi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jxf-Kw-cHx"/>
+                    <constraint firstItem="ZsP-KE-JCC" firstAttribute="leading" secondItem="dg7-Nq-dFi" secondAttribute="trailing" constant="5" id="beE-kB-TsY"/>
+                    <constraint firstItem="dg7-Nq-dFi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gwc-wm-joe"/>
+                    <constraint firstAttribute="trailing" secondItem="ZsP-KE-JCC" secondAttribute="trailing" constant="5" id="qHR-qY-jw0"/>
+                    <constraint firstItem="ZsP-KE-JCC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uNu-YE-dd8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="categoryLabel" destination="ZsP-KE-JCC" id="pI0-Mm-MxV"/>
+                <outlet property="indicatorView" destination="dg7-Nq-dFi" id="rq6-as-4wy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
